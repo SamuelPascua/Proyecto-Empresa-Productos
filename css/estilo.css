@@ -26,6 +26,8 @@ body{
     padding: 60px 0px;
 }
 
+/*              HEADER                 */
+
 header{
     height: 100vh;
     background-image: linear-gradient(to top, rgb(224, 195, 252, 0.4) 0%, rgb(142, 197, 252, 0.4) 100%),url(../img/Tienda.jpg);
@@ -91,4 +93,34 @@ header{
 .copy{
     font-weight: 300;
     font-size: 25px;
+}
+
+/*                PORTAFOLIO                  */
+
+.galeria{
+    background: #4ca1a3;
+}
+
+.subtitulo{
+    text-align: center;
+    font-weight: 300;
+    color: #287475;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.contenedor-galeria{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.img-galeria{
+    object-fit: cover;
+    width: 30%;
+    display: block;
+    margin-bottom: 40px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    cursor: pointer;
+    border-radius: 10px;
 }
