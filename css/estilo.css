@@ -58,6 +58,12 @@ header{
     cursor: pointer;
     border-radius: 10px;
     box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    transform: translate(0);
+    transition: transform .3s ease-in-out;
+}
+
+.ocultar{
+    transform: translate(200%);
 }
 
 .menu-navegacion{
@@ -76,7 +82,7 @@ header{
     box-shadow: 0 0 6px rgba(0, 0, 0, .5);
 }
 
-.spread{
+.mostrar{
 	transform: translate(0);
 }
 
