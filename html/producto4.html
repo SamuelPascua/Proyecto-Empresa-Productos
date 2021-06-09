@@ -3,8 +3,80 @@
     <head>
         <meta charset="utf-8">
         <title>PRODUCTO-RELOJ</title>
+        <link rel="stylesheet" type="text/css" href="../css/estilo-productos.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
     </head>
     <body>
+        <section>
+            <div class="contenedor-cabecera">
+                <h1>RELOJ</h1>
+                <img src="../img/cuatro.jpg" alt="Imagen de un reloj">
+            </div>
+            <div class="line"></div>
+            <div class="contenedor-texto">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, numquam consequuntur! Porro, magni? Est ipsam ad officiis 
+                    in architecto repellendus dolorem, inventore magni ab temporibus officia iste nostrum quasi cum.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, asperiores dolore laborum omnis quibusdam odit earum, aperiam 
+                    ullam quo, vel nobis? Veritatis quia, iusto culpa illo asperiores deserunt molestias dignissimos!
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, numquam consequuntur! Porro, magni? Est ipsam ad officiis 
+                    in architecto repellendus dolorem, inventore magni ab temporibus officia iste nostrum quasi cum.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, asperiores dolore laborum omnis quibusdam odit earum.
+                </p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, numquam consequuntur! Porro, magni? Est ipsam ad officiis 
+                    in architecto repellendus dolorem, inventore magni ab temporibus officia iste nostrum quasi cum.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, asperiores dolore laborum omnis quibusdam odit earum, aperiam 
+                    ullam quo, vel nobis? Veritatis quia, iusto culpa illo asperiores deserunt molestias dignissimos!
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, numquam consequuntur! Porro, magni? Est ipsam ad officiis 
+                    in architecto repellendus dolorem, inventore magni ab temporibus officia iste nostrum quasi cum.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, asperiores dolore laborum omnis quibusdam odit earum.
+                </p>
+            </div>
+            <div class="contenedor-botones">
+                <a href="#" id="btn-volver">INICIO</a>
+                <a href="#" id="btn-siguiente">SIGUIENTE</a>
+                <script type="text/javascript">
+                    const botones = document.querySelectorAll('a');
 
+                    const volver = document.getElementById('btn-volver');
+                    const siguiente = document.getElementById('btn-siguiente');
+            
+                    botones.forEach(btn => {
+                        btn.addEventListener('click', function(e) {
+                            /*console.log("e.clientX: " + e.clientX);
+                            console.log("e.target.offsetLeft: " + e.target.offsetLeft);
+                            console.log(e.clientX - e.target.offsetLeft);
+                            console.log("");
+                            console.log("e.clientY: " + e.clientY);
+                            console.log("e.target.offsetTop: " + e.target.offsetTop);
+                            console.log(e.clientY - e.target.offsetTop);*/
+                            let x = e.clientX - e.target.offsetLeft; /*Coordenada X de donde pincha el usuario*/
+                            let y = e.clientY - e.target.offsetTop; /*Coordenada Y de donde pincha el usuario*/
+            
+                            let ripples = document.createElement('span');
+                            ripples.style.left = x + 'px';
+                            ripples.style.top = y + 'px';
+                            this.appendChild(ripples);
+            
+                            setTimeout(() => {
+                                ripples.remove();
+                            },1000);
+                        })
+                    })    
+
+                    volver.addEventListener('click', function(){
+                        setInterval(function(){
+                            window.open("index.html", "_self");
+                        }, 1000);
+                    })
+
+                    siguiente.addEventListener('click', function() {
+                        setInterval(function(){
+                            window.open("producto5.html", "_self");
+                        }, 1000);
+                    })
+                </script>
+            </div>
+        </section>
     </body>
 </html>
