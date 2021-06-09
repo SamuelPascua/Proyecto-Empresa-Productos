@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    width: 75%;
+    height: 90%;
+    background: #fba183;
+    border-radius: 20px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenedor-cabecera{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Odibee Sans', cursive;
+}
+
+.contenedor-cabecera h1{
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.contenedor-cabecera img{
+    width: 20%;
+    height: 84%;
+    border-radius: 15px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    object-fit: cover;
+}
+
+.line{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 4px;
+    background: black;
+    margin-bottom: 10px;
+}
+
+.contenedor-texto{
+    width: 100%;
+    height: 65%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.contenedor-texto p{
+    width: 30%;
+    margin: 0 100px;
+    line-height: 25px;
+}
+
+.contenedor-botones{
+    width: 100%;
+    height: 14%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor-botones a{
+    margin: 0 65px;
+    width: 180px;
+    height: 40px;
+    border-radius: 40px;
+    font-family: 'Odibee Sans', cursive;
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 12px 36px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: #DCD9D4;
+    background-image: linear-gradient(to right, #ed6e79 0%, #c55463 100%);
+    overflow: hidden;
+}
+
+span{
+    position: absolute;
+    background: #fff;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    border-radius: 50%;
+    animation: animate 1s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        width: 0px;
+        height: 0px;
+        opacity: 0.5;
+    }
+    100%{
+        width: 500px;
+        height: 500px;
+        opacity: 0;
+    }
+}
