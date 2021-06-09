@@ -3,13 +3,13 @@ window.onload = function(){
     const icono = document.getElementById('icono-menu');
     const menu = document.getElementById('menu-navegacion');
 
-    imagenes.forEach(imagen =>{
+    imagenes.forEach(imagen =>{ //Añadimos a cada una de las immagenes un evento que lo que hará será ejecutar una función
         imagen.addEventListener('click', () =>{
             abrirPaginaProducto(imagen.getAttribute('src'));
         })
     })
 
-    const abrirPaginaProducto = (imagen)=>{
+    const abrirPaginaProducto = (imagen)=>{ //Abrirá una página u otra dependiendo del src que se le pase por parámetro
         if(imagen == "../img/uno.jpg"){
             //Abrir página producto 1
             window.open("../html/producto1.html", "_self");
@@ -36,12 +36,12 @@ window.onload = function(){
         }
     }
     
-    icono.addEventListener('click', ()=>{
+    icono.addEventListener('click', ()=>{ //Mostrará u ocultará dependiendo de sus clases
         menu.classList.toggle("mostrar");
         icono.classList.toggle("ocultar");
     })
     
-    window.addEventListener('click', (e)=>{
+    window.addEventListener('click', (e)=>{ //Mostrará u ocultará dependiendo de sus clases y de donde le hagamos click
         if(menu.classList.contains('mostrar') && e.target != menu && e.target != icono){
             menu.classList.toggle("mostrar");
             icono.classList.toggle("ocultar");
