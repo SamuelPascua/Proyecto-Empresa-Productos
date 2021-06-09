@@ -11,7 +11,7 @@
         <section>
             <div class="contenedor-cabecera">
                 <h1>GAFAS</h1>
-                <img src="../img/tres.jpg" alt="Imagen de una gafas">
+                <img src="../img/tres.jpg" alt="Imagen de unos gafas">
             </div>
             <div class="line"></div>
             <div class="contenedor-texto">
@@ -33,11 +33,13 @@
                 </p>
             </div>
             <div class="contenedor-botones">
+                <a href="#" id="btn-anterior">ANTERIOR</a>
                 <a href="#" id="btn-volver">INICIO</a>
                 <a href="#" id="btn-siguiente">SIGUIENTE</a>
-                <script type="text/javascript">
+                <script type="text/javascript"> //La parte principal de este efecto la seguí con un video de YouTube que me llamó la atención pero no copié todo el script
                     const botones = document.querySelectorAll('a');
 
+                    const anterior = document.getElementById('btn-anterior');
                     const volver = document.getElementById('btn-volver');
                     const siguiente = document.getElementById('btn-siguiente');
             
@@ -54,8 +56,8 @@
                             let y = e.clientY - e.target.offsetTop; /*Coordenada Y de donde pincha el usuario*/
             
                             let ripples = document.createElement('span');
-                            ripples.style.left = x + 'px';
-                            ripples.style.top = y + 'px';
+                            ripples.style.left = x + 'px'; //Añadimos la propiedad left con los pixeles de las coordenadas de X
+                            ripples.style.top = y + 'px'; //Añadimos la propiedad top con los pixeles de las coordenadas de Y
                             this.appendChild(ripples);
             
                             setTimeout(() => {
@@ -63,6 +65,12 @@
                             },1000);
                         })
                     })    
+
+                    anterior.addEventListener('click', function(){
+                        setInterval(function(){
+                            window.open("producto2.html", "_self")
+                        }, 1000)
+                    })
 
                     volver.addEventListener('click', function(){
                         setInterval(function(){
