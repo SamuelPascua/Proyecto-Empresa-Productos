@@ -101,6 +101,56 @@ header{
     font-size: 25px;
 }
 
+/*  INFORMACION  */
+
+section#informacion{
+    text-align: center;
+    background-color: #BB8FCE;
+}
+div.textoA h2{
+    text-align: center;
+    padding: 30px 100px 0px 100px;
+    color:#7D3C98;
+}
+div.restoA{
+    list-style-type: none;
+    position: relative;
+    height: 20%;
+    width: 20%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+div.restoA img.imagenA{
+    position: absolute;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    border-radius: 15px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    width: 450px;
+}
+div.restoA div.menuinfoA{
+    position: relative;
+    margin: 0px -5px 0px 800px;
+    padding-bottom: 57px;
+    padding-top: 10px;
+    border: 2px black solid;
+    width: 520px;
+    border-radius: 15px;
+}
+h3.infogeneralA{
+    margin: 10px 10px 0px 0px;
+    padding: 0px 50px 0px 10px;
+    text-align: left;
+}
+h3.tituloInfoA{
+    margin: 10px 10px 0px -200px;
+    padding: 0px 50px 0px 0px;
+}
+h3.infoA{
+    margin: 10px -80px 0px 0px;
+    padding: 0px 50px 0px 0px;
+}
+
 /*                PORTAFOLIO                  */
 
 .galeria{
